@@ -1,7 +1,7 @@
 :root{
     --main-color:#d3ad7f;
     --pastel:#FEFAE0;
-    --bg: #F2EED7;
+    --bg: #FAFAFA;
     --border:0.1rem solid rgb(74, 73, 71);
     font-size: 10px;
 }
@@ -15,8 +15,7 @@
  text-decoration: none;
  text-transform: capitalize;
  transition: 0.2 linear;
-
-
+ font-family: "Roboto", sans-serif;
 
 }
 
@@ -63,4 +62,32 @@ section {
     padding-bottom: 1.5rem;
 
 
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #000000;
+
+}
+
+/* 
+  o navbar no hover significa que oseja quando eu passar o mouse por cima desses icones eu quero que mude algumas coisas
+*/
+.navbar a:hover{   
+    color: var(--main-color);
+    border-bottom:0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.icons img:hover{
+
+  width: 40px;
+  height: 40px;
 }

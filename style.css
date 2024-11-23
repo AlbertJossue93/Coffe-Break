@@ -24,18 +24,36 @@ body{
     background-color: var(--bg);
 }
 
-
-
-
+/* 
+  Section:
+  Define uma estrutura padrão para as seções, com espaçamento interno (padding),
+  largura máxima e alinhamento centralizado.
+*/
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* 
+  Header:
+  Configura o cabeçalho para ficar fixo no topo da página com uma borda inferior.
+  Também define sua prioridade visual com z-index.
+*/
 .header{
 
-    position: fixed;
+    position: fixed; /* Mantém o cabeçalho no topo mesmo ao rolar a página */
     top:0;
     left:0;
     right:0;
-    z-index: 99; 
+    z-index: 99;     /* Garante que o cabeçalho fique acima de outros elementos */
     border-bottom: var(--border);
 }
+
+
+/* 
+  Header Section:
+  Organiza os elementos do cabeçalho em linha com espaçamento apropriado.
+*/
 
 .header section {
     display: flex;

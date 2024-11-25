@@ -54,6 +54,7 @@ section {
     right:0;
     z-index: 99;     /* Garante que o cabeçalho fique acima de outros elementos */
     border-bottom: var(--border);
+    background-color: var(--bg);
 }
 
 
@@ -114,6 +115,8 @@ section {
   background: url("./img/pexels-apgpotr-683039.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
+  top: 140px; /* Empurra para baixo */
   
 }
 
@@ -138,4 +141,57 @@ section {
   font-weight: 100;
   line-height: 1.8;
   padding: 1rem 0;
+}
+
+.title{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+
+}
+
+.title span {
+  color: #010101;
+  text-transform: uppercase;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  gap: 1.5rem;
+}
+
+.Container-image {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente, se necessário */
+  padding: 1rem;
+}
+
+.Container-image img {
+  width: 100%; /* Ajuste conforme necessário (diminui a imagem) */
+  max-width: 400px; /* Limite para não exceder */
+  height: auto; /* Mantém a proporção */
+  border-radius: 10px; /* Deixa as bordas arredondadas, opcional */
+}
+
+
+
+.about .row .content{
+  padding: 2rem;
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  color: #070707f1;
+}
+
+.about .row .content p{
+  font-size: 1.6rem;
+  color: #030303f9;
+  padding: 1rem 0;
+  line-height: 1.8;
 }

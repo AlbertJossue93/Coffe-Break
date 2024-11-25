@@ -19,6 +19,14 @@
 
 }
 
+/* Estilo para a logo */
+.logo img {
+  width: 200px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 100px; /* Limita a altura máxima */
+  object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+}
+
 body{
     background-color: var(--bg);
 }
@@ -90,4 +98,44 @@ section {
 
   width: 40px;
   height: 40px;
+}
+
+.btn{
+  background: var(--main-color);
+  color:#fff;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.home-container{
+  background: url("./img/pexels-apgpotr-683039.jpg");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.home-container section{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content{
+  max-width: 60rem;
+}
+
+.content{
+  color: #fff;
+  font-size: 6rem; 
+}
+
+.content p{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.8;
+  padding: 1rem 0;
 }

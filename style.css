@@ -19,6 +19,18 @@
 
 }
 
+/* imagem de fundo */
+.home-container{
+  background: url("./img/pexels-apgpotr-683039.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 140px; /* Empurra para baixo */
+  z-index: -1; /*para a imagem ficar atrás de tudo*/
+  width: 100%;
+  height: 100%;
+}
+
 /* Estilo para a logo */
 .logo img {
   width: 200px; /* Define a largura da imagem */
@@ -28,7 +40,7 @@
 }
 
 body{
-    background-color: var(--bg);
+  background-color: var(--bg);
 }
 
 /* 
@@ -47,7 +59,6 @@ section {
   Também define sua prioridade visual com z-index.
 */
 .header{
-
     position: fixed; /* Mantém o cabeçalho no topo mesmo ao rolar a página */
     top:0;
     left:0;
@@ -56,7 +67,6 @@ section {
     border-bottom: var(--border);
     background-color: var(--bg);
 }
-
 
 /* 
   Header Section:
@@ -69,25 +79,22 @@ section {
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-
-
 }
 
 .navbar a {
   margin: 0 1rem;
   font-size: 1.8rem;
   color: #000000;
-
 }
 
 /* 
   o navbar no hover significa que oseja quando eu passar o mouse por cima desses icones eu quero que mude algumas coisas
 */
 .navbar a:hover{   
-    color: var(--main-color);
-    border-bottom:0.1rem solid var(--main-color);
-    padding-bottom: 0.5rem;
-    font-size: 2rem;
+  color: var(--main-color);
+  border-bottom:0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .icons img {
@@ -96,18 +103,8 @@ section {
 }
 
 .icons img:hover{
-
   width: 40px;
   height: 40px;
-}
-
-.home-container{
-  background: url("./img/pexels-apgpotr-683039.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  top: 140px; /* Empurra para baixo */
-  
 }
 
 .home-container section{
@@ -121,7 +118,7 @@ section {
 }
 
 .content{
-  color: #fff;
+  color:var(--pastel);
   font-size: 6rem; 
 }
 
@@ -149,7 +146,7 @@ section {
 }
 
 .title{
-  font-size: 4rem;
+  font-size: 6rem;
   color: var(--main-color);
   text-align: center;
   text-transform: uppercase;
@@ -157,7 +154,7 @@ section {
 }
 
 .title span {
-  color: var(--main-color);
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -184,6 +181,7 @@ section {
 }
 
 .about .row .content{
+  flex: 1 1 45rem;
   padding: 2rem;
 }
 

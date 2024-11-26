@@ -28,8 +28,8 @@
           <a href="#">home</a>
           <a href="#about">sobre</a>
           <a href="#menu">Menu</a>
-          <a href="#review">Avaliaçoes</a>
-          <a href="#address">Endereço</a>
+          <a href="#review">Avaliações</a>
+          <a href="#address" onclick="mostrarModal()">Endereço</a>
         </nav>
         <!-- aqui nesta seçao pegamos os icons do site externo icons em codigo html e centralizamos isso dentro da nossa div-->
         <div class="icons">
@@ -60,20 +60,34 @@
     </div>
 
     <section class="about" id="about">
-      <h2 class="title">Sobre <span>Nós</span></h2>
+      <h2 class="title"><span>Sobre</span> Nós</h2>
+
       <div class="row">
+
         <div class="Container-image"> 
           <img src="./img/about-img.jpg" alt="sobre-nos">
         </div>
+
         <div class="content">
           <h3> O que faz nosso café especial</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odit amet, itaque, maxime in fuga ut, sint dicta voluptatibus libero explicabo tenetur animi quidem autem magni dolorem laborum perferendis! Distinctio!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsa repudiandae? Enim molestiae, voluptas neque ipsum ducimus dolore optio ipsam obcaecati placeat itaque perferendis! Harum exercitationem voluptatem voluptatibus odit incidunt!</p>
-          <a href="#" class="btn">Garantir o seu</a>
+          <p>
+          Desde a seleção criteriosa dos grãos até o preparo final, nosso objetivo é oferecer um café que seja mais do que uma bebida – é um momento de inspiração. Nosso segredo? Grãos frescos, baristas dedicados e aquele toque especial que só quem ama o que faz pode oferecer.</p>
+          <p>Aqui, o ambiente também faz a diferença. Seja para começar o dia, encontrar amigos ou mergulhar no seu próximo projeto, criamos o espaço perfeito para você "codar" com estilo e conforto.</p>
+          <a href="#" class="btn">Garanta o seu</a>
         </div>
 
       </div>
 
     </section>
+
+    <div class="modal"> 
+      <h3 class="title"><span>Nosso</span> Endereço</h3>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.402438185012!2d-63.88066532341959!3d-8.748151768876165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92325cb29a99d071%3A0x7dfd32c8871895ed!2sPorto%20Velho%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1732593322567!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+    <script src="./scritps.js"></script>
   </body>
 </html>

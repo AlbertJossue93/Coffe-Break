@@ -177,7 +177,7 @@ section {
   padding: 1rem 0;
   line-height: 1.8;
 }
-.menu .box-container{
+ .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
@@ -220,6 +220,30 @@ section {
 .menu .box-container .box:hover>*{
   color: var(--main-color);
 }
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    
+   font-size: 1.5rem;
+   color: #000000;
+   padding: 2rem 0;
+   line-height:1.8 ;
+}
+
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+
+
 
 .about .row .Container-image{
   display: flex;

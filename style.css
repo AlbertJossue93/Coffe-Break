@@ -19,6 +19,7 @@
 
 }
 
+
 /* Estilo para a logo */
 .logo img {
   width: 200px; /* Define a largura da imagem */
@@ -104,6 +105,7 @@ section {
   margin-top: 1rem;
   display: inline-block;
   transition: 0.3s linear;
+  text-transform: none;
 }
 
 .btn:hover{
@@ -135,9 +137,10 @@ section {
 .content p{
   color:var(--pastel);
   font-size: 2rem;
-  font-weight: 100;
   line-height: 1.8;
   padding: 1rem 0;
+  font-weight: 400;
+  text-transform: none;
 }
 
 .title{
@@ -168,12 +171,13 @@ section {
 
 .about .row .content h3{
   font-size: 3rem;
-  color: #070707f1;
+  color: #512716;
+  text-transform: none;
 }
 
 .about .row .content p{
   font-size: 1.6rem;
-  color: #030303f9;
+  color:#512716;
   padding: 1rem 0;
   line-height: 1.8;
 }
@@ -217,8 +221,16 @@ section {
   background-color: #512716;
 }
 
+.menu .box-container .box:hover .btn {
+  color: #fff; /* Garante que o texto do botão continue visível */
+}
+
 .menu .box-container .box:hover>*{
   color: var(--main-color);
+}
+
+.menu .box-container .box .btn:hover{
+  color: #512716;
 }
 
 .review .box-container .box {
@@ -228,13 +240,17 @@ section {
 }
 
 .review .box-container .box p {
-    
    font-size: 1.5rem;
-   color: #000000;
+   color: #512716;
    padding: 2rem 0;
-   line-height:1.8 ;
+   line-height:1.8;
+   
 }
 
+.review .box-container .box h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
 
 .review .box-container .box .user {
     height: 7rem;
@@ -242,7 +258,31 @@ section {
     border-radius: 50%;
 }
 
+.address {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+.footer {
+  text-align: center;
+
+}
+
+.footer .share{
+  padding: 1rem 0;
+}
+
+.footer .share img{
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.footer .share img:hover{
+  background-color: var(--main-color);
+}
 
 
 .about .row .Container-image{
